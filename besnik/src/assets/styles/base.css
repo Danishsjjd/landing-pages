@@ -15,4 +15,19 @@
   p {
     color: hsl(var(--primary-para));
   }
+  .sc::-webkit-scrollbar {
+    background: theme("colors.primary-para");
+    max-height: 6px;
+    width: 6px;
+  }
+  .sc::-webkit-scrollbar-corner {
+    background-color: theme("colors.white/30");
+  }
+  .sc::-webkit-scrollbar-thumb {
+    background-color: theme("colors.primary-light");
+  }
+  ::selection {
+    background-color: theme("colors.white");
+    color: #e2e8f0;
+  }
 }
