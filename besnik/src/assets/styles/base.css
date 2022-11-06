@@ -12,4 +12,7 @@
     --primary-dark: 212 66% 17%;
     font-family: "Roboto", sans-serif;
   }
+  p {
+    color: hsl(var(--primary-para));
+  }
 }
