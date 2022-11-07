@@ -31,10 +31,10 @@ const cardsContent: CardProps[] = [
 const Cards = () => {
   return (
     <div className="my-28 mx-auto max-w-7xl" id="Features">
-      <h2 className="mb-28 text-center font-inter text-5xl font-medium text-primary-dark">
+      <h2 className="mb-10 text-center font-inter text-4xl font-medium text-primary-dark sm:mb-28 sm:text-5xl">
         What Can We Help You Find?
       </h2>
-      <div className="grid grid-cols-3 items-center justify-center gap-10 text-center">
+      <div className="grid items-center justify-center gap-10 text-center sm:grid-cols-2 md:grid-cols-3">
         {cardsContent.map(({ des, icon, title, shadow }) => (
           <Card
             key={title}
@@ -50,7 +50,6 @@ const Cards = () => {
 };
 
 function Card({ des, icon, title, shadow }: CardProps) {
-  console.log(title, shadow);
   return (
     <div
       className={`grid place-items-center space-y-4 rounded p-4 py-10 ${

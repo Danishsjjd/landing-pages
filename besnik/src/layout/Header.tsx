@@ -30,7 +30,7 @@ const Header = (props: Props) => {
       >
         <div>
           <nav
-            className={`space-y-4 overflow-hidden transition-all duration-500 ${
+            className={`mb-3 space-y-4 overflow-hidden transition-all duration-500 ${
               isOpen ? "max-h-[1000px]" : "max-h-0"
             }`}
           >

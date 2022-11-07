@@ -12,7 +12,7 @@ const Sponsors = () => {
   return (
     <div className="mx-auto mt-10 max-w-7xl px-6">
       <ScrollContainer
-        className="scroll-container sc mx-auto my-5 flex max-w-7xl items-center justify-center gap-12  overflow-x-auto sm:gap-20"
+        className="scroll-container sc mx-auto my-5 flex max-w-7xl items-center gap-12 overflow-x-auto  sm:gap-20 lg:justify-center"
         vertical={false}
         hideScrollbars={false}
       >

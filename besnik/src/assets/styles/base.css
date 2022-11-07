@@ -27,7 +27,45 @@
     background-color: theme("colors.primary-light");
   }
   ::selection {
-    background-color: theme("colors.white");
-    color: #e2e8f0;
+    background-color: theme("colors.primary-dark");
+    color: rgb(228, 228, 228);
   }
+}
+
+.swiper-pagination {
+  width: 100%;
+  left: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  min-width: 15px !important;
+  min-height: 15px !important;
+  border-radius: 50% !important;
+  background: white;
+  padding: 3px;
+  transition: all 0.3s ease-in-out !important;
+  opacity: 1 !important;
+  margin: 0 4px !important;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  position: relative;
+}
+
+.swiper-pagination-bullet-active::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70%;
+  height: 70%;
+  background-color: black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
 }
