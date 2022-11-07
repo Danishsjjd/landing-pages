@@ -35,7 +35,7 @@ const Card = ({ desc, price, title, img }: CardContent) => {
               />
             )}
           </div>
-          <h3 className="text-center font-inter text-3xl sm:text-left">
+          <h3 className="text-center font-inter text-2xl font-medium sm:text-left">
             {title}
           </h3>
           <p className="text-center text-xl sm:text-left">{desc}</p>

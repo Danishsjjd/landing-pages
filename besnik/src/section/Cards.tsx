@@ -6,7 +6,6 @@ type CardProps = {
   title: string;
   icon: string;
   des: string;
-  shadow?: boolean;
 };
 
 const cardsContent: CardProps[] = [
@@ -19,7 +18,6 @@ const cardsContent: CardProps[] = [
     des: `With 35+ filters and custom keyword search, Trulia can help you find a home`,
     icon: card2,
     title: "Rent a home",
-    shadow: true,
   },
   {
     des: `With more neighborhood insights than any other real estate website`,
@@ -35,26 +33,18 @@ const Cards = () => {
         What Can We Help You Find?
       </h2>
       <div className="grid items-center justify-center gap-10 text-center sm:grid-cols-2 md:grid-cols-3">
-        {cardsContent.map(({ des, icon, title, shadow }) => (
-          <Card
-            key={title}
-            des={des}
-            icon={icon}
-            title={title}
-            shadow={shadow}
-          />
+        {cardsContent.map(({ des, icon, title }) => (
+          <Card key={title} des={des} icon={icon} title={title} />
         ))}
       </div>
     </div>
   );
 };
 
-function Card({ des, icon, title, shadow }: CardProps) {
+function Card({ des, icon, title }: CardProps) {
   return (
     <div
-      className={`grid place-items-center space-y-4 rounded p-4 py-10 ${
-        shadow ? "shadow-2xl shadow-primary-dark/5" : ""
-      }`}
+      className={`grid place-items-center space-y-4 rounded p-4  py-10 hover:shadow-2xl hover:shadow-primary-dark/5`}
     >
       <div className="mb-12 flex justify-center">
         <img src={icon} alt="icon" />
