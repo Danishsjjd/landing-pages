@@ -14,6 +14,9 @@ module.exports = {
         "primary-dark": "hsl(var(--primary-dark) / <alpha-value>)",
       },
     },
+    animation: {
+      bounce: "bounce 2s 1s infinite",
+    },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animation-delay")],
 };

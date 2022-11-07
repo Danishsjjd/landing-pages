@@ -1,9 +1,7 @@
 import heroImg from "../assets/images/hero image.png";
 import TextGroup from "../components/TextGroup";
 
-type Props = {};
-
-const Hero = (props: Props) => {
+const Hero = () => {
   return (
     <div id={"Home"} className="mt-16">
       <div className="mx-auto block max-w-3xl items-center justify-between gap-20 space-y-5 px-3 text-center lg:flex lg:max-w-7xl lg:space-y-0 lg:text-left">
@@ -21,7 +19,7 @@ const Hero = (props: Props) => {
           <img
             src={heroImg}
             alt="hero"
-            className="max-w-md lg:min-w-[30rem] [@media_(min-width:1205px)]:max-w-3xl"
+            className="max-w-md px-16 sm:px-0 lg:min-w-[30rem] [@media_(min-width:1205px)]:max-w-3xl"
           />
         </div>
       </div>

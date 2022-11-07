@@ -14,7 +14,7 @@ const Card = ({ desc, price, title, img }: CardContent) => {
         <div>
           <img src={img} alt="card" className="h-full w-full object-cover" />
         </div>
-        <div className="flex flex-col items-center justify-between gap-3 pl-8 text-center sm:col-span-2 sm:items-start sm:text-left ">
+        <div className="flex flex-col items-center justify-between gap-5 pl-8 text-center sm:col-span-2 sm:items-start sm:text-left ">
           <div className="mt-3 flex w-full justify-between sm:mt-0">
             <h3 className="font-inter text-xl font-medium text-primary-light lg:text-3xl">
               {price}
@@ -47,7 +47,10 @@ const Card = ({ desc, price, title, img }: CardContent) => {
               <img src={bath} alt="bath" className="object-contain" />2 Bath
             </div>
           </div>
-          <Button className="!p-2 text-center text-base sm:text-left">
+          <Button
+            className="!p-2 text-center text-base hover:bg-primary-light hover:text-white sm:text-left"
+            variant="outline"
+          >
             View Details
           </Button>
         </div>

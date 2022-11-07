@@ -17,7 +17,7 @@ const support = ["Help Center", "Loan Supper", "Management", "Privacy Policy"];
 const Footer = () => {
   return (
     <div className="mx-auto max-w-5xl py-20 px-5">
-      <div className="flex justify-between ">
+      <div className="flex flex-wrap justify-between gap-8 ">
         <div>
           <h3 className="mb-6 font-inter text-2xl font-medium text-primary-dark">
             Popular Searches
@@ -67,7 +67,10 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <img src={logo} alt="logo" className="mt-10" />
+      <div className="mt-10 flex flex-wrap justify-between">
+        <img src={logo} alt="logo" />
+        <p>© 2021 Besnik. All Rights Reserved</p>
+      </div>
     </div>
   );
 };

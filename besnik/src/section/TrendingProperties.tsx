@@ -30,7 +30,7 @@ function Top() {
   return (
     <div className="items-center justify-between text-center md:flex md:text-left [&>_*]:mx-auto [&>*]:md:!mx-0">
       <div className="max-w-lg space-y-8">
-        <h2 className="text-4xl font-medium text-primary-dark sm:text-5xl">
+        <h2 className="font-inter text-4xl font-semibold text-primary-dark sm:text-5xl">
           Our trending latest proparty
         </h2>
         <p className="md:max-w-md">
