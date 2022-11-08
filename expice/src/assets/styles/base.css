@@ -1,0 +1,16 @@
+@import "tailwindcss/base";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+@layer base {
+  body {
+    overflow-x: hidden;
+    --primary-main: 154 60% 51%;
+    --primary-para: 0 0% 44%;
+    --secondary-main: 247 49% 29%;
+    --bg-main: 28 100% 96%;
+    --bg-secondary: 27 100% 94%;
+    font-family: "Poppins", sans-serif;
+    background-color: hsl(var(--bg-main));
+  }
+}
