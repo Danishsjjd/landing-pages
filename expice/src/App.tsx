@@ -1,4 +1,5 @@
 import HeadingText from "./components/HeadingText";
+import Grid from "./section/Grid";
 import Header from "./layout/Header";
 import AdvanceBooking from "./section/AdvanceBooking";
 import CardSlider from "./section/CardSlider";
@@ -16,6 +17,7 @@ function App() {
       <CardSlider />
       <AdvanceBooking />
       <HeadingText title="Our Services" />
+      <Grid />
       <ExploreFoods />
       <DownloadApp />
       <Footer />
