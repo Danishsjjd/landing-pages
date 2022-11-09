@@ -6,7 +6,7 @@ type Props = {
 
 const Button = ({ children }: Props) => {
   return (
-    <button className="flex items-center justify-center rounded-tl-full bg-primary-main px-16 py-6 text-white">
+    <button className="flex items-center justify-center rounded-tl-full bg-primary-main/90 px-6 py-4 text-white hover:bg-primary-main  sm:px-16">
       {children}
     </button>
   );

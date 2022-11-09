@@ -9,8 +9,8 @@ const links = ["Menu One", "Menu Two", "Menu Three", "Menu Four"];
 
 const Header = (props: Props) => {
   return (
-    <header className="relative py-6 md:py-8">
-      <div className="absolute right-0 top-0 -z-10 h-full w-1/5 bg-primary-main" />
+    <header className="relative py-4">
+      <div className="absolute right-0 top-0 -z-10 h-full w-1/3 bg-primary-main" />
       {/* mobile */}
       <div className="flex justify-between px-8 md:hidden">
         <img src={logo} alt="logo" className="w-28" />

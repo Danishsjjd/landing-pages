@@ -1,32 +1,28 @@
-import Button from "../components/Button";
+import InputWithButton from "../components/InputWithButton";
+import Slider from "../components/HeroSlider";
 
 type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="relative">
-      <div className="absolute bottom-[10%] left-0 rounded-tr-full rounded-br-full bg-primary-main px-4 py-2 text-white">
+    <div className="relative pb-20">
+      <div className="fond-medium absolute top-[19rem] left-0 rounded-tr-full rounded-br-full bg-primary-main px-12 py-2 text-lg text-white sm:top-[unset] sm:bottom-[10%]">
         Rajshahi
       </div>
-      <div className="absolute right-0 top-0 -z-10 h-full w-1/5 bg-primary-main" />
-      <div className="mx-auto flex min-h-[80vh] w-full max-w-7xl justify-between px-4">
-        <div className="mt-16 w-1/2 space-y-4">
-          <h2 className="text-9xl font-extrabold text-secondary-main/10">
+      <div className="absolute right-0 top-0 -z-10 h-full w-1/3 bg-primary-main" />
+      <div className="mx-auto w-full max-w-7xl items-center justify-between px-4 md:flex">
+        <div className="w-full space-y-4 md:w-1/2">
+          <h2 className="text-6xl font-extrabold text-secondary-main/10 sm:text-9xl">
             Food
           </h2>
-          <h3 className="text-5xl font-bold text-secondary-main">
+          <h3 className="text-4xl font-bold text-secondary-main sm:text-5xl">
             Discover Restaurant & Delicious Food
           </h3>
-          <div className="flex h-14 max-w-md bg-white p-2">
-            <input
-              type="text"
-              className="grow bg-transparent p-2 px-3 outline-none"
-              placeholder="Search Restaurant, Food..."
-            />
-            <Button>Go</Button>
-          </div>
+          <InputWithButton />
         </div>
-        <div className="w-1/2">Hello</div>
+        <div className="mt-20 w-full sm:mt-0 md:w-1/2">
+          <Slider />
+        </div>
       </div>
     </div>
   );
