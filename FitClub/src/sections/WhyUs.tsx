@@ -16,15 +16,15 @@ const content = [
 
 const WhyUs = () => {
   return (
-    <div className="flex px-8 ">
-      <div className="grid grid-cols-3 gap-5 [&>img]:w-full w-1/2">
-        <img src={img1} alt="1" className="row-span-2 h-[32rem]" />
-        <img src={img2} alt="2" className="col-span-2 h-[15rem]" />
-        <img src={img3} alt="3" className="h-[15rem] " />
-        <img src={img4} alt="4" className="h-[15rem]" />
+    <div className="flex flex-col items-center px-8 md:flex-row md:items-start">
+      <div className="grid w-[90%] grid-cols-3 gap-5 md:w-1/2 [&>img]:w-full">
+        <img src={img1} alt="1" className="row-span-2 h-[20rem] sm:h-[32rem]" />
+        <img src={img2} alt="2" className="col-span-2 h-[9rem] sm:h-[15rem]" />
+        <img src={img3} alt="3" className="h-[9rem] sm:h-[15rem] " />
+        <img src={img4} alt="4" className="h-[9rem] sm:h-[15rem]" />
       </div>
-      <div className="w-1/2 pl-20 space-y-6">
-        <h4 className="text-orange font-medium text-xl">SOME REASONS</h4>
+      <div className="mt-6 w-[90%] space-y-6 md:mt-0 md:w-1/2 md:pl-20">
+        <h4 className="text-xl font-medium text-orange">SOME REASONS</h4>
         <h2 className="text-4xl">
           <span className="text-stroke font-medium">WHY</span> CHOOSE US?
         </h2>

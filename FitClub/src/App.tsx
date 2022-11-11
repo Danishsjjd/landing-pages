@@ -14,17 +14,17 @@ function App() {
       <WhyUs />
       <Plans />
       <Testimonial />
-      <div className="flex items-end gap-20 px-8 relative">
-        <hr className="absolute border-2 border-orange rounded w-52 p-px -top-2" />
-        <h1 className="text-6xl font-bold">
+      <div className="relative flex flex-col items-end gap-8 px-8 md:flex-row md:gap-20">
+        <hr className="absolute -top-2 w-52 rounded border-2 border-orange p-px" />
+        <h1 className="heading">
           <span className="text-stroke">READY TO</span> <span>LEVEL UP</span>
           <br />
           <span className="text-stroke">YOUR BODY</span> <span>WITH US?</span>
         </h1>
-        <label className="flex p-4 bg-gray">
+        <label className="flex bg-gray p-4">
           <input
             type="text"
-            className="bg-transparent text-white grow outline-none placeholder:text-white pr-8"
+            className="grow bg-transparent pr-8 text-white outline-none placeholder:text-white"
             placeholder="Enter Your Email Address"
           />
           <Button>Join Now</Button>

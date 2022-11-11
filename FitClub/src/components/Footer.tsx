@@ -7,7 +7,9 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <div className="px-8 border-t-2 border-t-white py-40 flex flex-col gap-20 justify-center items-center">
+    <div className="relative flex flex-col items-center justify-center gap-20 border-t-2 border-t-white px-8 py-28">
+      <div className="cus-blur left-28 top-10 w-[40rem] bg-orange/20" />
+      <div className="cus-blur right-28 top-10 w-[40rem] bg-danger/20" />
       <div className="flex gap-20">
         <a href="#">
           <img src={github} alt="github" className="w-10 object-contain" />
