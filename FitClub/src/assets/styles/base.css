@@ -42,7 +42,4 @@
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: theme("colors.white");
   }
-  svg {
-    @apply fill-white;
-  }
 }
