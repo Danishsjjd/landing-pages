@@ -115,12 +115,12 @@ const Slider = () => {
           key={index}
           className="grid items-center justify-center gap-x-10 gap-y-10 md:grid-cols-2 lg:gap-x-28"
         >
-          {cards.map(({ desc, price, title, img }) => (
+          {cards.map(({ desc, price, title, img }, index) => (
             <Card
               desc={desc}
               price={price}
               title={title}
-              key={title}
+              key={index}
               img={img}
             />
           ))}

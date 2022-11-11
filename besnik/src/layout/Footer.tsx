@@ -67,7 +67,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="mt-10 flex flex-wrap justify-between">
+      <div className="mt-10 flex flex-wrap justify-between gap-2">
         <img src={logo} alt="logo" />
         <p>© 2021 Besnik. All Rights Reserved</p>
       </div>

@@ -2,7 +2,7 @@ import searchIcon from "../assets/images/icons/icon-search.png";
 
 const Banner = () => {
   return (
-    <div className="my-20 bg-primary-dark py-24">
+    <div className="my-20 bg-primary-dark py-16 md:py-32">
       <div className="mx-auto max-w-5xl items-center justify-between px-3 md:flex">
         <div className="max-w-lg space-y-4">
           <h1 className="text-5xl text-white">Talk to a Redfin Agent</h1>

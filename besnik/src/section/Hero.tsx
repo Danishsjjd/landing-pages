@@ -6,7 +6,7 @@ const Hero = () => {
     <div id={"Home"} className="mt-16">
       <div className="mx-auto block max-w-3xl items-center justify-between gap-20 space-y-5 px-3 text-center lg:flex lg:max-w-7xl lg:space-y-0 lg:text-left">
         <div className="space-y-8">
-          <h1 className="font-inter text-5xl font-semibold text-primary-dark [@media_(min-width:1205px)]:text-7xl">
+          <h1 className="font-inter text-3xl font-semibold text-primary-dark sm:text-5xl [@media_(min-width:1205px)]:text-7xl">
             Search for Homes in your Neighborhood
           </h1>
           <p className="text-md lg:w-[500px]">

@@ -37,7 +37,9 @@ const Header = (props: Props) => {
             <ul className="space-y-4 text-center">
               {links.map((link) => (
                 <li key={link.id}>
-                  <LinkButton to={link.title}>{link.title}</LinkButton>
+                  <LinkButton to={link.title} setIsOpen={setIsOpen}>
+                    {link.title}
+                  </LinkButton>
                 </li>
               ))}
             </ul>

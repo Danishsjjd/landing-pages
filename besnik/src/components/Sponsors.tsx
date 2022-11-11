@@ -12,7 +12,7 @@ const Sponsors = () => {
   return (
     <div className="mx-auto mt-10 max-w-7xl px-6">
       <ScrollContainer
-        className="scroll-container sc mx-auto my-5 flex max-w-7xl items-center gap-12 overflow-x-auto  sm:gap-20 lg:justify-center"
+        className="scroll-container mx-auto my-5 flex max-w-7xl items-center gap-12 overflow-x-auto  sm:gap-20 lg:justify-center"
         vertical={false}
         hideScrollbars={false}
       >
@@ -21,7 +21,7 @@ const Sponsors = () => {
             src={img}
             alt="sponsors"
             key={index}
-            className="max-w-[130px] py-2 sm:max-w-[170px]"
+            className="max-w-[120px] py-2 sm:max-w-[170px]"
           />
         ))}
       </ScrollContainer>
