@@ -1,4 +1,14 @@
-export const plansData = [
+import React from "react";
+
+export type PlanData = {
+  icon: React.ReactNode;
+  name: string;
+  price: number;
+  features: string[];
+  premium: boolean;
+};
+
+export const plansData: PlanData[] = [
   {
     icon: (
       <svg
@@ -11,12 +21,13 @@ export const plansData = [
       </svg>
     ),
     name: "BASIC PLAN",
-    price: "25",
+    price: 25,
     features: [
       "2 hours of excercises",
       "Free consultaion to coaches",
       "Access to The Community",
     ],
+    premium: false,
   },
   {
     icon: (
@@ -30,12 +41,13 @@ export const plansData = [
       </svg>
     ),
     name: "PREMIUM PLAN",
-    price: "30",
+    price: 30,
     features: [
       "5 hour of excercises",
       "Free consultaion of Coaches",
       "Accessto minibar",
     ],
+    premium: true,
   },
   {
     icon: (
@@ -49,11 +61,12 @@ export const plansData = [
       </svg>
     ),
     name: "PRO PLAN",
-    price: "45",
+    price: 45,
     features: [
       "8 hours of excercises",
       "Consultation of Private Coach",
       "Free Fitness Merchandises",
     ],
+    premium: false,
   },
 ];

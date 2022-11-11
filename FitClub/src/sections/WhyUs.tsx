@@ -18,20 +18,20 @@ const WhyUs = () => {
   return (
     <div className="flex px-8 ">
       <div className="grid grid-cols-3 gap-5 [&>img]:w-full w-1/2">
-        <img src={img1} alt="1" className="row-span-2 h-[30rem]" />
-        <img src={img2} alt="2" className="col-span-2 h-[14rem]" />
-        <img src={img3} alt="3" className="h-[14rem] " />
-        <img src={img4} alt="4" className="h-[14rem]" />
+        <img src={img1} alt="1" className="row-span-2 h-[32rem]" />
+        <img src={img2} alt="2" className="col-span-2 h-[15rem]" />
+        <img src={img3} alt="3" className="h-[15rem] " />
+        <img src={img4} alt="4" className="h-[15rem]" />
       </div>
-      <div className="w-1/2 pl-20 space-y-4">
+      <div className="w-1/2 pl-20 space-y-6">
         <h4 className="text-orange font-medium text-xl">SOME REASONS</h4>
         <h2 className="text-4xl">
-          <span className="text-stroke">WHY</span> CHOOSE US?
+          <span className="text-stroke font-medium">WHY</span> CHOOSE US?
         </h2>
-        <div className="space-y-4">
+        <div className="space-y-6">
           {content.map((str, index) => (
             <div key={index} className="flex  items-center gap-4">
-              <img src={tickImg} alt="tick" className="w-10" />
+              <img src={tickImg} alt="tick" className="w-8" />
               <h4 className="text-xl font-bold">{str}</h4>
             </div>
           ))}

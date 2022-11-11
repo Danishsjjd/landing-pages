@@ -19,7 +19,7 @@ const Programs = () => {
 
 function Card({ details, heading, image }: CardType) {
   return (
-    <div className="bg-gray/50 hover:bg-gradient-to-tr from-orange to-danger p-6 space-y-5 [&>svg]:fill-white [&>svg]:w-8 [&>svg]:h-8  ">
+    <div className="bg-gray/50 hover:bg-gradient-to-tr from-orange to-danger cursor-default p-6 space-y-5 [&>svg]:fill-white [&>svg]:w-8 [&>svg]:h-8  ">
       {image}
       <h3 className="text-xl font-bold">{heading}</h3>
       <p>{details}</p>

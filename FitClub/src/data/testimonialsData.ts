@@ -2,7 +2,14 @@ import image1 from "../assets/images/t-image1.png";
 import image2 from "../assets/images/t-image2.jpg";
 import image3 from "../assets/images/t-image3.jpg";
 
-export const testimonialsData = [
+export type TestimonialType = {
+  image: string;
+  review: string;
+  name: string;
+  status: string;
+};
+
+export const testimonialsData: TestimonialType[] = [
   {
     image: image1,
     review:
