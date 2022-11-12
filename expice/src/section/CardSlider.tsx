@@ -63,8 +63,11 @@ const Slider = () => {
       {foods.map((food, index) => (
         <SwiperSlide key={index} className="">
           <div className="grid grid-cols-1 gap-10 px-4 md:grid-cols-2 md:px-0 lg:gap-20">
-            {food.map((foodDetails) => (
-              <div className="relative mx-auto flex h-[28rem] w-full max-w-md items-end overflow-hidden rounded-3xl md:mx-0 md:max-w-none">
+            {food.map((foodDetails, index) => (
+              <div
+                className="relative mx-auto flex h-[28rem] w-full max-w-md items-end overflow-hidden rounded-3xl md:mx-0 md:max-w-none"
+                key={index}
+              >
                 <img
                   src={foodDetails.img}
                   alt="food"

@@ -2,10 +2,22 @@ import logo from "../assets/images/logo.svg";
 import userIcon from "../assets/images/User icon.svg";
 import arrow from "../assets/images/right_sign.png";
 import menuBar from "../assets/images/Menu bar.svg";
+import Dropdown from "../components/Dropdown";
 
 type Props = {};
 
 const links = ["Menu One", "Menu Two", "Menu Three", "Menu Four"];
+
+const mobileLinks = [
+  ...links,
+  <div className="flex cursor-pointer items-center justify-center gap-3 rounded-full py-2 shadow-xl shadow-emerald-700/30">
+    <div className="relative">
+      <img src={userIcon} alt="user icon" />
+      <div className="absolute top-0 right-0 h-4 w-4 rounded-full bg-emerald-700" />
+    </div>
+    <p className="">User</p>
+  </div>,
+];
 
 const Header = (props: Props) => {
   return (
@@ -14,7 +26,9 @@ const Header = (props: Props) => {
       {/* mobile */}
       <div className="flex justify-between px-8 md:hidden">
         <img src={logo} alt="logo" className="w-28" />
-        <img src={menuBar} alt="menu" />
+        <Dropdown items={mobileLinks}>
+          <img src={menuBar} alt="menu" />
+        </Dropdown>
       </div>
 
       <div className="mx-auto hidden max-w-7xl items-center justify-between px-4 md:flex ">
