@@ -19,11 +19,13 @@ const Programs = () => {
 
 function Card({ details, heading, image }: CardType) {
   return (
-    <div className="cursor-default space-y-5 bg-gray/50 from-orange to-danger p-6 hover:bg-gradient-to-tr [&>svg]:h-8 [&>svg]:w-8 [&>svg]:fill-white  ">
-      {image}
-      <h3 className="text-xl font-bold">{heading}</h3>
-      <p>{details}</p>
-      <button className="flex gap-10">
+    <div className="flex cursor-default flex-col justify-between bg-gray/50 from-orange to-danger p-6 hover:bg-gradient-to-tr ">
+      <div className="space-y-5 [&>svg]:h-8 [&>svg]:w-8 [&>svg]:fill-white">
+        {image}
+        <h3 className="text-xl font-bold">{heading}</h3>
+        <p>{details}</p>
+      </div>
+      <button className="mt-3 flex gap-10">
         <span>Join Now</span>
         <img src={arrowIcon} alt="arrow" />
       </button>
