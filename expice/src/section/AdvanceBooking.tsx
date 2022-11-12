@@ -12,7 +12,7 @@ function AdvanceBooking({}: Props) {
           <div className="mb-4 h-4 w-28 bg-primary-main md:w-60" />
           <h2 className="text-2xl font-medium md:text-4xl">Advance Booking</h2>
         </div>
-        <InputWithButton containerClass="max-w-2xl shadow-2xl shadow-black/10" />
+        <InputWithButton containerClass="max-w-2xl shadow-2xl shadow-black/10 z-10 isolate relative" />
         <div className="grid grid-cols-3 place-items-center gap-3">
           <div>
             <h3>Date</h3>

@@ -28,7 +28,7 @@ const Footer = (props: Props) => {
           adipiscing cursus auctor eget sed phasellus senectus.{" "}
         </p>
         <InputWithButton />
-        <ul className="mt-8 flex gap-4 text-primary-para">
+        <ul className="mt-8 flex flex-col gap-4 text-primary-para sm:flex-row">
           {links.map((link) => (
             <li key={link}>{link}</li>
           ))}
@@ -43,7 +43,7 @@ const Footer = (props: Props) => {
             </a>
           ))}
         </div>
-        <p>2020 Expice Studio</p>
+        <p className="text-xs sm:text-base">2020 Expice Studio</p>
       </div>
     </div>
   );
