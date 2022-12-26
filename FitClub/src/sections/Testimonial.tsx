@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { testimonialsData } from "../data/testimonialsData";
+import { testimonialsData, TestimonialType } from "../data/testimonialsData";
 import rightArrow from "../assets/images/rightArrow.png";
 import leftArrow from "../assets/images/leftArrow.png";
 
@@ -10,6 +10,26 @@ const transition = { duration: 0.5, type: "spring" };
 const Testimonial = () => {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
   const data = testimonialsData[currentSlide];
+
+  useEffect(() => {
+    const loadImage = (card: TestimonialType) => {
+      return new Promise((resolve, reject) => {
+        const loadImg = new Image();
+        loadImg.src = card.image;
+        loadImg.onload = () => resolve(card.image);
+
+        loadImg.onerror = (err) => reject(err);
+      });
+    };
+
+    Promise.all(testimonialsData.map((card) => loadImage(card))).catch(
+      (err) => {
+        const msg = "Failed to load images";
+        console.log(msg, err);
+      }
+    );
+  }, []);
+
   return (
     <AnimatePresence mode="wait" initial={false}>
       <div className="space-y-5 px-8">
