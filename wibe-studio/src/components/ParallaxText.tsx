@@ -7,8 +7,8 @@ import {
   useMotionValue,
   useVelocity,
   useAnimationFrame,
+  wrap,
 } from "framer-motion"
-import { wrap } from "@motionone/utils"
 
 interface ParallaxProps {
   children: string
